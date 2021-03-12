@@ -1,0 +1,15 @@
+/***HEADING SECONDARY-FONCTIONNEMENT-RESTAURANT**/
+.heading-secondary {
+	font-size: 1.5rem;
+	&-restaurant {
+		padding-left: 1rem;
+		padding-top: 1rem;
+	}
+	&-carte {
+		text-transform: uppercase;
+		font-weight: normal;
+		border-bottom: 3px solid $color-tertiary;
+		display: inline-block;
+		width: 8%;
+	}
+}

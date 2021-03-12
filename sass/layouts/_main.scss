@@ -1,0 +1,21 @@
+main {
+	display: flex;
+	flex: 1;
+}
+
+/*********************************************************/
+
+/***MEDIA QUERIES 320PX **/
+@media screen and (max-width: 460px) {
+	.box-reservation {
+		.btn {
+			width: 100%;
+		}
+	}
+
+	/*****Fonctionnement****/
+	.list {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

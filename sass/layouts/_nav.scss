@@ -1,0 +1,54 @@
+/******* FONCTIONNEMENT********/
+
+.list {
+	counter-reset: numberOfList;
+	padding: 1rem;
+
+	li {
+		background-color: $color-grey;
+		padding: 1.8rem 1.5rem;
+		margin: 1rem auto;
+		border-radius: 2rem;
+		box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.2);
+		font-size: 1rem;
+		font-weight: 900;
+		list-style-type: none;
+		counter-increment: numberOfList;
+		position: relative;
+		&::before {
+			content: counter(numberOfList);
+			background-color: $color-primary;
+			color: $color-white;
+			font-size: 0.9rem;
+			width: 1.5rem;
+			height: 1.5rem;
+			border-radius: 50%;
+			display: inline-block;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			position: absolute;
+			top: 2rem;
+			left: -0.5rem;
+		}
+		&:hover {
+			background-color: lighten($color-primary, 35%);
+			box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.4);
+			cursor: pointer;
+			:not(span) {
+				color: $color-primary;
+			}
+		}
+	}
+	&_main {
+		padding: 0 1rem;
+		font-size: 1.4rem;
+		color: darken($color: $color-grey, $amount: 60%);
+	}
+}
+/****RESTAURANTS**/
+.section-restaurants {
+	a {
+		text-decoration: none;
+	}
+}

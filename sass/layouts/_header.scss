@@ -1,0 +1,20 @@
+.header {
+	display: flex;
+
+	&-logo {
+		text-align: center;
+		margin: 2rem 0 0.8rem;
+		position: relative;
+		img {
+			width: 12rem;
+		}
+		/***MENU RESTO 1 */
+
+		.fleche {
+			font-size: 1.2rem;
+			position: absolute;
+			top: 0;
+			left: 1.5rem;
+		}
+	}
+}

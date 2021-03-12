@@ -1,0 +1,17 @@
+@import "./utils/variables";
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typographie";
+
+@import "./components/present-box";
+@import "./components/buttons";
+@import "./components/resto-box";
+@import "./components/carte-box";
+
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/nav";
+@import "./layouts/icon";
+@import "./layouts/footer";
+
+@import "./pages/home";

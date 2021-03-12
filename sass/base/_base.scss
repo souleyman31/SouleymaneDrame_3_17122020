@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: $font-primary, $font-secondary, Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+	line-height: 1.7;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 95rem;
+	width: 100%;
+	/*
+	&:not(.footer) {
+		background-color: white;
+	}*/
+}

@@ -1,0 +1,28 @@
+/******* BOUTON ***/
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 10rem;
+	box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.2);
+	padding: 0.75rem 0;
+	width: 70%;
+	margin: 1rem auto;
+	font-size: 1rem;
+
+	transition: all 0.2s;
+	&--purple {
+		color: $color-white;
+		background: linear-gradient($color-secondary, $color-primary);
+	}
+
+	&:hover {
+		box-shadow: 0 0.5rem 1rem rgba($color: $color-black, $alpha: 0.5);
+		background: linear-gradient(lighten($color-secondary, 3%), lighten($color-primary, 3%));
+		transform: scaleY(1.02) translateY(1px);
+	}
+	&:active {
+		box-shadow: 0 0.25rem 0.5rem rgba($color: $color-black, $alpha: 0.5);
+		background: linear-gradient(lighten($color-secondary, 50%), lighten($color-primary, 50%));
+		transform: scaleY(1.01) translateY(0.5px);
+	}
+}
