@@ -1,4 +1,6 @@
 .section-presentation {
+	padding: 0;
+	margin: 0;
 }
 .section-fonctionnement {
 	width: 90%;
@@ -6,10 +8,12 @@
 }
 
 .section-restaurants {
-	margin: 2rem auto 0;
 	background-color: $color-grey;
+	padding: 2rem 0 2rem;
 }
 /*******************/
 .section-carte {
-	
+	padding: 0;
+
+	margin: 0;
 }

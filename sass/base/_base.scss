@@ -10,14 +10,10 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
 }
 
 .wrapper {
 	max-width: 95rem;
 	width: 100%;
-	/*
-	&:not(.footer) {
-		background-color: white;
-	}*/
+	margin: 0 auto;
 }

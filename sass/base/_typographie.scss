@@ -1,7 +1,30 @@
+/*HEADING PRIMARY */
+/*CARTE-PRESENT*/
+.heading-primary {
+	&--main {
+		font-family: $font-primary;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+		font-weight: 900;
+		font-size: 1.6rem;
+	}
+	/*CARTE-BOX*/ /*
+	&--sub {
+		width: 82%; 
+		font-family: $font-secondary;
+		background-color: #15dea5;
+
+		font-size: 1.5rem;
+		font-weight: normal;
+		padding: 2rem 0 2rem 1rem;
+	}*/
+}
+
 /***HEADING SECONDARY-FONCTIONNEMENT-RESTAURANT**/
 .heading-secondary {
 	font-size: 1.5rem;
-	&-restaurant {
+	font-family: $font-primary;
+	&--restaurant {
 		padding-left: 1rem;
 		padding-top: 1rem;
 	}
@@ -10,6 +33,23 @@
 		font-weight: normal;
 		border-bottom: 3px solid $color-tertiary;
 		display: inline-block;
-		width: 8%;
+		width: 2.4rem;
+	}
+}
+/*HEADING TERTIARY*/
+
+/***RESTO BOX */
+.heading-tertiary {
+	font-family: $font-primary;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 900;
+
+	/***CARTE BOX */
+	&-carte {
+		font-size: 1.2rem;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 	}
 }
