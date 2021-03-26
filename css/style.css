@@ -81,7 +81,8 @@ main {
     display: flex;
     flex-wrap: wrap; }
     .box-menu .card-menu {
-      width: 48%; } }
+      width: 100%;
+      max-width: 48%; } }
 
 /***************************** BREAKPOINT-DESKTOP ***************************/
 @media screen and (min-width: 1025px) {
@@ -102,7 +103,7 @@ main {
     display: flex;
     flex-wrap: wrap; }
     .box-menu .card-menu {
-      width: 22.5%; }
+      max-width: 22.5%; }
   /***MEAL-BOX*/
   .meal-box .meal-picture img {
     height: 30rem; }

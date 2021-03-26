@@ -25,7 +25,7 @@ main {
 /************ MEDIA-QUERIES */
 
 /*** BREAKPOINT-MOBILE  ***/
-@media screen and (max-width: $breakpoint-mobile) {
+@media screen and (max-width: 460px) {
 	.box-reservation {
 		.btn {
 			width: 100%;
@@ -43,19 +43,23 @@ main {
 }
 /************************ BREAKPOINT-TABLET *****************************/
 
-@media screen and (min-width: $breakpoint-tablet) {
+@media screen and (min-width: 612px) {
 	.box-menu {
 		@include display-wrap;
+
 		.card-menu {
-			width: 48%;
+			width: 100%;
+			max-width: 48%;
 		}
 	}
 }
+
 /***************************** BREAKPOINT-DESKTOP ***************************/
 
-@media screen and (min-width: $breakpoint-desktop) {
+@media screen and (min-width: 1025px) {
 	.section-fonctionnement {
 		width: 90%;
+
 		.list {
 			display: flex;
 			padding-left: 0.5rem;
@@ -76,7 +80,7 @@ main {
 	.box-menu {
 		@include display-wrap;
 		.card-menu {
-			width: 22.5%;
+			max-width: 22.5%;
 		}
 	}
 	/***MEAL-BOX*/
