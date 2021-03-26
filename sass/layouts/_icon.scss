@@ -15,21 +15,21 @@
 		right: 1rem;
 		transition-duration: 1s;
 	}
-	.icon1 {
-		opacity: 0;
-		cursor: pointer;
-		background: linear-gradient($color-primary, $color-secondary);
-		-webkit-background-clip: text;
-		background-clip: text;
-		color: transparent;
+}
+.icon1 {
+	opacity: 0;
+	cursor: pointer;
+	background: linear-gradient($color-primary, $color-secondary);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 
-		&::before {
-			font-weight: bold;
-		}
+	&::before {
+		font-weight: bold;
 	}
-	/***CARTE-BOX*/
-	.icon3 {
-		top: 2.4rem;
-		right: 1rem;
-	}
+}
+/***CARTE-BOX*/
+.icon3 {
+	top: 2.4rem;
+	right: 1rem;
 }
