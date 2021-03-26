@@ -1,0 +1,9 @@
+@mixin pad-margin {
+	padding: 0;
+	margin: 0;
+}
+
+@mixin display-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}

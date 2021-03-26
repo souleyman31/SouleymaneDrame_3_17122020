@@ -17,3 +17,85 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
+main {
+	display: flex;
+	flex: 1;
+}
+
+/************ MEDIA-QUERIES */
+
+/*** BREAKPOINT-MOBILE  ***/
+@media screen and (max-width: $breakpoint-mobile) {
+	.box-reservation {
+		.btn {
+			width: 100%;
+		}
+	}
+
+	/*****Fonctionnement****/
+
+	.section-fonctionnement {
+		.list {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+/************************ BREAKPOINT-TABLET *****************************/
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.box-menu {
+		@include display-wrap;
+		.card-menu {
+			width: 48%;
+		}
+	}
+}
+/***************************** BREAKPOINT-DESKTOP ***************************/
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.section-fonctionnement {
+		width: 90%;
+		.list {
+			display: flex;
+			padding-left: 0.5rem;
+			padding-right: 0;
+			li {
+				width: 30%;
+
+				&:nth-child(1) {
+					margin-left: 0;
+				}
+				&:nth-child(3) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	/* RESTO-BOX ***/
+	.box-menu {
+		@include display-wrap;
+		.card-menu {
+			width: 22.5%;
+		}
+	}
+	/***MEAL-BOX*/
+	.meal-box {
+		.meal-picture {
+			img {
+				height: 30rem;
+			}
+		}
+		.meal-menu {
+			top: 30rem;
+			.meal-wrapper {
+				display: flex;
+				justify-content: space-between;
+
+				.meal {
+					width: 33%;
+				}
+			}
+		}
+	}
+}

@@ -1,19 +1,47 @@
 @charset "UTF-8";
+/******MEAL-BOX*/
+.meal-food--1 {
+  animation: appear 0.5s linear 0.3s both; }
+
+.meal-food--2 {
+  animation: appear 0.5s linear 0.3s both; }
+
+.meal-food--3 {
+  animation: appear 0.5s linear 0.3s both; }
+
+.meal-food--4 {
+  animation: appear 0.5s linear 0.3s both; }
+
+.meal-food--5 {
+  animation: appear 0.5s linear 1s both; }
+
+.meal-food--6 {
+  animation: appear 0.5s linear 1s both; }
+
+.meal-food--7 {
+  animation: appear 0.5s linear 1s both; }
+
+.meal-food--8 {
+  animation: appear 0.5s linear 1.5s both; }
+
+.meal-food--9 {
+  animation: appear 0.5s linear 1.5s both; }
+
+.meal-food--10 {
+  animation: appear 0.5s linear 1.5s both; }
+
+.meal-food--11 {
+  animation: appear 0.5s linear 1.5s both; }
+
 @keyframes appear {
   0% {
     opacity: 0;
-    /*transform: scale(0);*/ }
+    transform: scale(0);
+    transform: translateY(15px); }
   100% {
     opacity: 1;
-    /*	transform: scale(1);*/ } }
-
-@keyframes appear1 {
-  0% {
-    opacity: 0;
-    /*transform: scale(0);*/ }
-  100% {
-    opacity: 1;
-    /*	transform: scale(1);*/ } }
+    transform: scale(1);
+    transform: translateY(0); } }
 
 * {
   margin: 0;
@@ -33,26 +61,67 @@ body {
   width: 100%;
   margin: 0 auto; }
 
+main {
+  display: flex;
+  flex: 1; }
+
+/************ MEDIA-QUERIES */
+/*** BREAKPOINT-MOBILE  ***/
+@media screen and (max-width: 460px) {
+  .box-reservation .btn {
+    width: 100%; }
+  /*****Fonctionnement****/
+  .section-fonctionnement .list {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/************************ BREAKPOINT-TABLET *****************************/
+@media screen and (min-width: 612px) {
+  .box-menu {
+    display: flex;
+    flex-wrap: wrap; }
+    .box-menu .card-menu {
+      width: 48%; } }
+
+/***************************** BREAKPOINT-DESKTOP ***************************/
+@media screen and (min-width: 1025px) {
+  .section-fonctionnement {
+    width: 90%; }
+    .section-fonctionnement .list {
+      display: flex;
+      padding-left: 0.5rem;
+      padding-right: 0; }
+      .section-fonctionnement .list li {
+        width: 30%; }
+        .section-fonctionnement .list li:nth-child(1) {
+          margin-left: 0; }
+        .section-fonctionnement .list li:nth-child(3) {
+          margin-right: 0; }
+  /* RESTO-BOX ***/
+  .box-menu {
+    display: flex;
+    flex-wrap: wrap; }
+    .box-menu .card-menu {
+      width: 22.5%; }
+  /***MEAL-BOX*/
+  .meal-box .meal-picture img {
+    height: 30rem; }
+  .meal-box .meal-menu {
+    top: 30rem; }
+    .meal-box .meal-menu .meal-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      .meal-box .meal-menu .meal-wrapper .meal {
+        width: 33%; } }
+
 /*HEADING PRIMARY */
 /*CARTE-PRESENT*/
-.heading-primary {
-  /*CARTE-BOX*/
-  /*
-	&--sub {
-		width: 82%; 
-		font-family: $font-secondary;
-		background-color: #15dea5;
-
-		font-size: 1.5rem;
-		font-weight: normal;
-		padding: 2rem 0 2rem 1rem;
-	}*/ }
-  .heading-primary--main {
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    font-weight: 900;
-    font-size: 1.6rem; }
+.heading-primary--main {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 900;
+  font-size: 1.6rem; }
 
 /***HEADING SECONDARY-FONCTIONNEMENT-RESTAURANT**/
 .heading-secondary {
@@ -61,7 +130,7 @@ body {
   .heading-secondary--restaurant {
     padding-left: 1rem;
     padding-top: 1rem; }
-  .heading-secondary-carte {
+  .heading-secondary-meal {
     text-transform: uppercase;
     font-weight: normal;
     border-bottom: 3px solid #99e2d0;
@@ -75,8 +144,8 @@ body {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 900;
-  /***CARTE BOX */ }
-  .heading-tertiary-carte {
+  /***MEAL BOX */ }
+  .heading-tertiary-meal {
     font-size: 1.2rem;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -108,7 +177,6 @@ body {
     display: block;
     margin-bottom: 1rem; }
 
-/******* BOUTON ***/
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   cursor: pointer;
@@ -146,7 +214,6 @@ body {
     width: 90%;
     margin: 1rem auto 2rem;
     border: 1px solid transparent;
-    /*****/
     background-color: white;
     border-radius: 1rem;
     padding-bottom: 1rem;
@@ -155,7 +222,7 @@ body {
       position: relative; }
       .box-menu .card-menu_image img {
         width: 100%;
-        height: 16rem;
+        height: 13rem;
         object-fit: cover;
         background-position: top;
         border-radius: 1rem 1rem 0 0; }
@@ -178,119 +245,140 @@ body {
         font-size: 1.1rem;
         line-height: 1.2rem; }
 
-.carte-box {
-  position: relative;
-  /************************************/ }
-  .carte-box .carte-picture img {
+.meal-box {
+  position: relative; }
+  .meal-box .meal-picture img {
     width: 100%;
-    height: 19rem;
+    height: 17rem;
     object-fit: cover;
     background-position: center; }
-  .carte-box .carte-menu {
+  .meal-box .meal-menu {
     width: 100%;
     position: absolute;
-    top: 18.3rem;
+    top: 17rem;
     border-radius: 2.5rem 2.5rem 0 0;
     background-color: #f6f6f6;
-    margin-top: -2rem; }
-    .carte-box .carte-menu .card-menu_text--1 {
+    margin-top: -2rem;
+    /*****************************************************************************/ }
+    .meal-box .meal-menu .card-menu_text--1 {
       display: flex;
       flex-wrap: wrap;
       align-items: center; }
-      .carte-box .carte-menu .card-menu_text--1 .heading-primary--sub {
+      .meal-box .meal-menu .card-menu_text--1 .heading-primary--sub {
         width: 82.5%;
         font-family: "Shrikhand", cursive;
         font-size: 1.6rem;
         font-weight: normal;
         padding: 2rem 0 2rem 1rem; }
-  .carte-box .starter {
-    padding: 1rem; }
-    .carte-box .starter-box {
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
-      /****/
-      margin: 1rem auto;
-      padding-left: 0.7rem;
-      border-radius: 1rem;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-      border: 1px solid transparent;
-      display: flex;
-      height: 4rem; }
-      .carte-box .starter-box_main {
-        width: 100%;
-        position: relative;
-        transition: 0.5s;
-        cursor: pointer; }
-        .carte-box .starter-box_main .paragraphe {
-          width: 66%;
-          font-size: 0.9rem;
-          /*line-height: 1rem;*/
-          white-space: nowrap;
-          letter-spacing: 1px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          transition: all 1s; }
-        .carte-box .starter-box_main .price {
-          position: absolute;
-          top: 1.5rem;
-          right: 1rem;
-          font-size: 0.9rem;
-          font-weight: bold; }
-      .carte-box .starter-box_sub {
-        width: 0%;
-        height: 4rem;
-        text-align: center;
-        line-height: 4.5rem;
+    .meal-box .meal-menu .meal {
+      padding: 1rem; }
+      .meal-box .meal-menu .meal-food {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 1rem auto;
+        padding-left: 0.7rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
         cursor: pointer;
-        background-color: #99e2d0;
-        color: #fff;
-        border-radius: 0 1rem 1rem 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        transition: 0.5s; }
-        .carte-box .starter-box_sub .fas {
-          transform: rotate(360deg);
-          transition: 0.4s; }
-      .carte-box .starter-box:hover .starter-box_main {
-        width: 87.5%; }
-      .carte-box .starter-box:hover .starter-box_sub {
-        width: 12.5%; }
-      .carte-box .starter-box:hover .paragraphe {
-        width: 63%; }
-      .carte-box .starter-box:hover .fas {
-        transform: rotate(0deg); }
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center; }
+        .meal-box .meal-menu .meal-food_name {
+          width: calc(100% - 50px);
+          height: 4.5rem;
+          padding-top: 0.5rem;
+          transition: all 0.5s; }
+          .meal-box .meal-menu .meal-food_name .paragraphe {
+            font-size: 0.9rem;
+            line-height: 1.1rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transition: all 1s; }
+        .meal-box .meal-menu .meal-food_price {
+          width: 50px;
+          height: 4.5rem;
+          font-size: 0.95rem;
+          font-weight: bold;
+          line-height: 6rem;
+          text-align: left; }
+        .meal-box .meal-menu .meal-food_icon {
+          width: 0;
+          height: 4.5rem;
+          background-color: #99e2d0;
+          color: #fff;
+          border-radius: 0 1rem 1rem 0;
+          overflow: hidden;
+          text-align: center;
+          line-height: 5rem;
+          transition: 0.5s; }
+          .meal-box .meal-menu .meal-food_icon .fas {
+            transform: rotate(360deg);
+            transition: 0.5s; }
+        .meal-box .meal-menu .meal-food:hover .meal-food_name {
+          width: calc(100% - 115px); }
+        .meal-box .meal-menu .meal-food:hover .meal-food_icon {
+          width: 65px; }
+        .meal-box .meal-menu .meal-food:hover .fas {
+          transform: rotate(0deg); }
 
-.starter-box--1 {
-  animation: appear 0.3s linear both; }
+.lg-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: spin_one 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both; }
+  .lg-spinner-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 7.5rem; }
+  .lg-spinner_item {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+    animation: spin_two 1s;
+    animation-iteration-count: 1;
+    -webkit-animation: spin_two 1s; }
+    .lg-spinner_item--1 {
+      background: #9356dc; }
+    .lg-spinner_item--2 {
+      background: #ff79da;
+      animation-delay: 0.25s; }
+    .lg-spinner_item--3 {
+      background: #99e2d0;
+      animation-delay: 0.5s; }
 
-.starter-box--2 {
-  animation: appear 0.3s linear 0.3s both; }
+@keyframes spin_one {
+  100% {
+    opacity: 0;
+    z-index: -1; } }
 
-.starter-box--3 {
-  animation: appear 0.3s linear 0.6s both; }
-
-/*
-.starter-box--4 {
-	animation: appear 0.3s linear 0.9s both;
-}
-.starter-box--5 {
-	animation: appear1 0.3s linear 0.12s both;
-}
-.starter-box--6 {
-	animation: appear1 0.3s linear 0.15s both;
-}*/
-/********************************************/
-.command {
-  width: 55%;
-  margin: 0 auto 3rem;
-  text-align: center; }
+@keyframes spin_two {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(-0.5rem); }
+  50% {
+    transform: translateY(0); }
+  75% {
+    transform: translateY(0.5rem); }
+  100% {
+    transform: translateY(0); } }
 
 .header {
   display: flex; }
   .header-logo {
     text-align: center;
-    margin: 2rem 0 0.8rem;
+    margin-bottom: 1.2rem;
     position: relative;
     /***MENU RESTO 1 */ }
     .header-logo img {
@@ -300,20 +388,6 @@ body {
       position: absolute;
       top: 0;
       left: 1.5rem; }
-
-main {
-  display: flex;
-  flex: 1; }
-
-/*********************************************************/
-/***MEDIA QUERIES 320PX **/
-@media screen and (max-width: 460px) {
-  .box-reservation .btn {
-    width: 100%; }
-  /*****Fonctionnement****/
-  .section-fonctionnement .list {
-    padding-left: 0;
-    padding-right: 0; } }
 
 /******* FONCTIONNEMENT********/
 .list {
@@ -384,9 +458,7 @@ main {
       font-weight: bold; }
   .icon .icon3 {
     top: 2.4rem;
-    /*2.4rem;*/
-    right: 1rem;
-    /* 3.5rem;*/ }
+    right: 1rem; }
 
 .footer {
   display: flex;
@@ -422,7 +494,8 @@ main {
   margin: 0; }
 
 .section-fonctionnement {
-  width: 90%;
+  width: 100%;
+  padding: 1rem;
   margin: 2rem auto; }
 
 .section-restaurants {
@@ -431,5 +504,10 @@ main {
 
 /*******************/
 .section-carte {
+  padding: 0;
+  margin: 0; }
+
+/*******************/
+.section-meal {
   padding: 0;
   margin: 0; }

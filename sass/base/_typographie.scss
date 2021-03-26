@@ -8,16 +8,6 @@
 		font-weight: 900;
 		font-size: 1.6rem;
 	}
-	/*CARTE-BOX*/ /*
-	&--sub {
-		width: 82%; 
-		font-family: $font-secondary;
-		background-color: #15dea5;
-
-		font-size: 1.5rem;
-		font-weight: normal;
-		padding: 2rem 0 2rem 1rem;
-	}*/
 }
 
 /***HEADING SECONDARY-FONCTIONNEMENT-RESTAURANT**/
@@ -28,7 +18,7 @@
 		padding-left: 1rem;
 		padding-top: 1rem;
 	}
-	&-carte {
+	&-meal {
 		text-transform: uppercase;
 		font-weight: normal;
 		border-bottom: 3px solid $color-tertiary;
@@ -45,8 +35,8 @@
 	font-size: 1.2rem;
 	font-weight: 900;
 
-	/***CARTE BOX */
-	&-carte {
+	/***MEAL BOX */
+	&-meal {
 		font-size: 1.2rem;
 		white-space: nowrap;
 		text-overflow: ellipsis;

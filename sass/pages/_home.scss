@@ -1,9 +1,9 @@
 .section-presentation {
-	padding: 0;
-	margin: 0;
+	@include pad-margin;
 }
 .section-fonctionnement {
-	width: 90%;
+	width: 100%;
+	padding: 1rem;
 	margin: 2rem auto;
 }
 
@@ -13,7 +13,9 @@
 }
 /*******************/
 .section-carte {
-	padding: 0;
-
-	margin: 0;
+	@include pad-margin;
+}
+/*******************/
+.section-meal {
+	@include pad-margin;
 }

@@ -1,0 +1,16 @@
+/******MEAL-BOX*/
+@for $i from 1 through 4 {
+	.meal-food--#{$i} {
+		animation: appear 0.5s linear 0.3s both;
+	}
+}
+@for $i from 5 through 7 {
+	.meal-food--#{$i} {
+		animation: appear 0.5s linear 1s both;
+	}
+}
+@for $i from 8 through 11 {
+	.meal-food--#{$i} {
+		animation: appear 0.5s linear 1.5s both;
+	}
+}
