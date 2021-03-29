@@ -259,8 +259,7 @@ main {
     top: 17rem;
     border-radius: 2.5rem 2.5rem 0 0;
     background-color: #f6f6f6;
-    margin-top: -2rem;
-    /*****************************************************************************/ }
+    margin-top: -2rem; }
     .meal-box .meal-menu .card-menu_text--1 {
       display: flex;
       flex-wrap: wrap;
@@ -271,57 +270,6 @@ main {
         font-size: 1.6rem;
         font-weight: normal;
         padding: 2rem 0 2rem 1rem; }
-    .meal-box .meal-menu .meal {
-      padding: 1rem; }
-      .meal-box .meal-menu .meal-food {
-        background-color: rgba(255, 255, 255, 0.8);
-        margin: 1rem auto;
-        padding-left: 0.7rem;
-        border-radius: 1rem;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        width: 100%;
-        height: 4.5rem;
-        display: flex;
-        align-items: center; }
-        .meal-box .meal-menu .meal-food_name {
-          width: calc(100% - 50px);
-          height: 4.5rem;
-          padding-top: 0.5rem;
-          transition: all 0.5s; }
-          .meal-box .meal-menu .meal-food_name .paragraphe {
-            font-size: 0.9rem;
-            line-height: 1.1rem;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            transition: all 1s; }
-        .meal-box .meal-menu .meal-food_price {
-          width: 50px;
-          height: 4.5rem;
-          font-size: 0.95rem;
-          font-weight: bold;
-          line-height: 6rem;
-          text-align: left; }
-        .meal-box .meal-menu .meal-food_icon {
-          width: 0;
-          height: 4.5rem;
-          background-color: #99e2d0;
-          color: #fff;
-          border-radius: 0 1rem 1rem 0;
-          overflow: hidden;
-          text-align: center;
-          line-height: 5rem;
-          transition: 0.5s; }
-          .meal-box .meal-menu .meal-food_icon .fas {
-            transform: rotate(360deg);
-            transition: 0.5s; }
-        .meal-box .meal-menu .meal-food:hover .meal-food_name {
-          width: calc(100% - 115px); }
-        .meal-box .meal-menu .meal-food:hover .meal-food_icon {
-          width: 65px; }
-        .meal-box .meal-menu .meal-food:hover .fas {
-          transform: rotate(0deg); }
 
 .lg-spinner {
   display: flex;
@@ -464,6 +412,61 @@ main {
 .icon3 {
   top: 2.4rem;
   right: 1rem; }
+
+.meal {
+  padding: 1rem; }
+  .meal-food {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 1rem auto;
+    padding-left: 0.7rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center; }
+    .meal-food_name {
+      width: calc(100% - 50px);
+      height: 4.5rem;
+      padding-top: 0.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      transition: all 0.5s; }
+      .meal-food_name .paragraphe {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        transition: all 1s; }
+    .meal-food_price {
+      width: 50px;
+      height: 4.5rem;
+      font-size: 0.95rem;
+      font-weight: bold;
+      line-height: 6rem;
+      text-align: left; }
+    .meal-food_icon {
+      width: 0;
+      height: 4.5rem;
+      background-color: #99e2d0;
+      color: #fff;
+      border-radius: 0 1rem 1rem 0;
+      overflow: hidden;
+      text-align: center;
+      line-height: 5rem;
+      transition: 0.5s; }
+      .meal-food_icon .fas {
+        transform: rotate(360deg);
+        transition: 0.5s; }
+    .meal-food:hover .meal-food_name {
+      width: calc(100% - 115px); }
+    .meal-food:hover .meal-food_icon {
+      width: 65px; }
+    .meal-food:hover .fas {
+      transform: rotate(0deg); }
 
 .footer {
   display: flex;
