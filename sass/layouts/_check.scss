@@ -11,7 +11,7 @@
 		height: 4.5rem;
 		display: flex;
 		align-items: center;
-
+		overflow: hidden;
 		&_name {
 			width: calc(100% - #{50px});
 			height: 4.5rem;
